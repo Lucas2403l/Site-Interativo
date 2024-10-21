@@ -68,6 +68,7 @@ body {
 }
 .cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .card {
@@ -79,6 +80,7 @@ body {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
+    flex: 1 1 calc(33% - 40px); /* Três cartões por linha */
 }
 .card:hover {
     transform: scale(1.05);

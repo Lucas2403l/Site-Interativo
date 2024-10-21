@@ -3,7 +3,8 @@ function fazerAlgoAleatorio() {
         mudarCorDeFundo,
         mostrarCitacaoInspiradora,
         adicionarEmojiAleatorio,
-        tocarSomDivertido
+        tocarSomDivertido,
+        mostrarNoticiaAleatoria
     ];
     const acaoAleatoria = acoes[Math.floor(Math.random() * acoes.length)];
     acaoAleatoria();
@@ -40,6 +41,16 @@ function tocarSomDivertido() {
     const audio = new Audio('https://www.myinstants.com/media/sounds/mlg-airhorn.mp3');
     audio.play();
     mostrarResultado("Tocando som divertido!");
+}
+
+function mostrarNoticiaAleatoria() {
+    const noticias = [
+        "Notícia 1: Importante evento acontecendo agora!",
+        "Notícia 2: Tecnologia avançando a passos largos.",
+        "Notícia 3: Descoberta surpreendente revelada."
+    ];
+    const noticiaAleatoria = noticias[Math.floor(Math.random() * noticias.length)];
+    mostrarResultado(noticiaAleatoria);
 }
 
 function mostrarResultado(mensagem) {

@@ -30,7 +30,7 @@ body {
     max-width: 800px;
     margin: auto;
 }
-#random, #contact, #comments, footer {
+#random, #contact, #comments, #gallery, #news, footer {
     background-color: #e0f7fa;
     border-radius: 10px;
     margin: 20px 0;
@@ -53,4 +53,14 @@ body {
     margin-top: 20px;
     font-size: 18px;
     color: #333;
+}
+.gallery-img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+.gallery-img:hover {
+    transform: scale(1.2);
 }

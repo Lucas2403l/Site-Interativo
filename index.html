@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Melhor Site do Mundo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#emojis">Emojis</a>
+        <a href="#contact">Contato</a>
+    </div>
+
+    <div class="container">
+        <h1>O Melhor Site do Mundo</h1>
+        <div id="emoji-container">
+            <span class="emoji">😊</span>
+            <span class="emoji">😂</span>
+            <span class="emoji">😍</span>
+        </div>
+        <button class="button" onclick="adicionarEmoji('😎')">Adicionar Emoji</button>
+        <button class="button" onclick="removerUltimoEmoji()">Remover Último Emoji</button>
+        <button class="button" onclick="mudarEmoji()">Mudar Emoji</button>
+    </div>
+
+    <div id="contact">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Seu nome">
+            <input type="email" id="email" placeholder="Seu email">
+            <textarea id="message" placeholder="Sua mensagem"></textarea>
+            <button type="submit" class="button">Enviar</button>
+        </form>
+    </div>
+
+    <div id="comments">
+        <h2>Comentários</h2>
+        <div id="comment-section">
+            <!-- Comentários aparecerão aqui -->
+        </div>
+        <textarea id="new-comment" placeholder="Adicione um comentário"></textarea>
+        <button onclick="adicionarComentario()" class="button">Adicionar Comentário</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

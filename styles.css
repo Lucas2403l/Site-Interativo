@@ -30,7 +30,7 @@ body {
     max-width: 800px;
     margin: auto;
 }
-#random, #contact, #comments, #gallery, #news, footer {
+#random, #contact, #comments, #gallery, #news, #cards, footer {
     background-color: #e0f7fa;
     border-radius: 10px;
     margin: 20px 0;
@@ -60,9 +60,26 @@ body {
     gap: 20px;
 }
 .gallery-emoji {
-    font-size: 100px; /* Tamanho da imagem substituído por emoji */
+    font-size: 100px;
     transition: transform 0.2s;
 }
 .gallery-emoji:hover {
     transform: scale(1.2);
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.05);
 }

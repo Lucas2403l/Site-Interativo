@@ -62,16 +62,6 @@ function mostrarResultado(mensagem) {
     setTimeout(() => result.remove(), 3000);
 }
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Mensagem enviada! Nome: ' + document.getElementById('name').value + ', Email: ' + document.getElementById('email').value);
-});
-
-function adicionarComentario() {
-    const commentSection = document.getElementById('comment-section');
-    const newComment = document.createElement('div');
-    newComment.className = 'comment';
-    newComment.textContent = document.getElementById('new-comment').value;
-    commentSection.appendChild(newComment);
-    document.getElementById('new-comment').value = '';
-}
+function mudarCorCarta(carta) {
+    const cores = ['#ffebcd', '#7fffd4', '#faebd7', '#ffe4c4'];
+    const corAleatoria = cores[_{{{CITATION{{{_1{](https://github.com/ricardo-cas/pandas/tree/eefd8f3ed9250c15e029b7ae59a24ef9f7ffc4ab/GUIA_MARKDOWN.MD)[_{{{CITATION{{{_2{](https://github.com/shreyas1925/dbms-sem-lab/tree/3aa3299e61d55f6a565f56a86a6a4695844d4e6c/update.php)[_{{{CITATION{{{_3{](https://github.com/Jervi-sir/boxy/tree/039f41926d97cacff7cee66fc9578985f429cd74/resources%2Fviews%2Fauth%2Flogin.blade.php)

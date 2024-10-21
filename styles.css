@@ -54,13 +54,15 @@ body {
     font-size: 18px;
     color: #333;
 }
-.gallery-img {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    border-radius: 10px;
+.emoji-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.gallery-emoji {
+    font-size: 100px; /* Tamanho da imagem substituído por emoji */
     transition: transform 0.2s;
 }
-.gallery-img:hover {
+.gallery-emoji:hover {
     transform: scale(1.2);
 }

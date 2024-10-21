@@ -30,3 +30,54 @@ function mostrarCitacaoInspiradora() {
 function adicionarEmojiAleatorio() {
     const emojis = ['😊', '😂', '😍', '😎', '🥳', '🤔', '🥺'];
     const emojiAleatorio = emojis[Math.floor(Math.random() * emojis.length)];
+    const container = document.getElementById('random-result');
+    const newEmoji = document.createElement('span');
+    newEmoji.className = 'emoji animate__animated animate__bounceIn';
+    newEmoji.textContent = emojiAleatorio;
+    container.appendChild(newEmoji);
+}
+
+function tocarSomDivertido() {
+    const audio = new Audio('https://www.myinstants.com/media/sounds/mlg-airhorn.mp3');
+    audio.play();
+    mostrarResultado("Tocando som divertido!");
+}
+
+function mostrarNoticiaAleatoria() {
+    const noticias = [
+        "Notícia 1: Importante evento acontecendo agora!",
+        "Notícia 2: Tecnologia avançando a passos largos.",
+        "Notícia 3: Descoberta surpreendente revelada."
+    ];
+    const noticiaAleatoria = noticias[Math.floor(Math.random() * noticias.length)];
+    mostrarResultado(noticiaAleatoria);
+}
+
+function mostrarResultado(mensagem) {
+    const container = document.getElementById('random-result');
+    const result = document.createElement('div');
+    result.className = 'result';
+    result.textContent = mensagem;
+    container.appendChild(result);
+    setTimeout(() => result.remove(), 3000);
+}
+
+function mudarCorCarta(carta) {
+    const cores = ['#ffebcd', '#7fffd4', '#faebd7', '#ffe4c4'];
+    const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+    carta.style.backgroundColor = corAleatoria;
+}
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Mensagem enviada! Nome: ' + document.getElementById('name').value + ', Email: ' + document.getElementById('email').value);
+});
+
+function adicionarComentario() {
+    const commentSection = document.getElementById('comment-section');
+    const newComment = document.createElement('div');
+    newComment.className = 'comment';
+    newComment.textContent = document.getElementById('new-comment').value;
+    commentSection.appendChild(newComment);
+    document.getElementById('new-comment').value = '';
+}
